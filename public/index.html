@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var p1 = new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve(1)
+            },15000);
+        });
+        var p2 = Promise.resolve(2);
+        var p3 = new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve(3)
+            },5000);
+        });
+
+        Promise.all([p3,p1, p2]).then(values => {
+            console.log(values); 
+        });
+    </script>
+</body>
+
+</html>
