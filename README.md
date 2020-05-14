@@ -4,11 +4,14 @@
 
 出于好奇学了下nodeJs，然后用express写了个接口，没有路由，出于好奇，就随便写写，很乱并且很烂。。。，状态码返回的也很随意
 
-## 功能
+## 预览
 
 * 测试地址：[https://api.songjintao.cn](https://api.songjintao.cn)
 
 * 我的博客：[https://songjintao.cn](https://songjintao.cn)
+
+## 功能
+
 
 * 注册 jwt
 * 用户名查重
