@@ -7,6 +7,9 @@ const { payUrl } = require('./module/sign')
 let $ = new TOKEN();
 let SERCET = "biubiul.1234";
 
+//支付宝付款
+const { createOrder, checkOrder } = require('./module/alipay/index')
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
